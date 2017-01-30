@@ -1,0 +1,15 @@
+"alert_detail_controller_title_email_leaked" = "Email Address Leaked";
+"alert_detail_controller_description_email_leaked" = "Your email has been leaked";
+"alert_detail_controller_detail_from_%@" = "From: %@";
+"alert_detail_controller_detail_date_of_leak_%@" = "Date of leak: %@";
+"alert_detail_controller_risks_title" = "What's at risk";
+"alert_detail_controller_risk_email" = "Your email and password were compromised and could be used to access other accounts.";
+"alert_detail_controller_steps_title" = "Next Steps";
+"alert_detail_controller_step_change_password_immediately" = "Change your password immediately";
+"alert_detail_controller_step_change_password_other_accounts" = "Change passwords for any accounts that share this email and password combo";
+"alert_detail_controller_step_keep_an_eye" = "Keep an eye on accounts for any strange behavior";
+"alert_detail_controller_need_help_title" = "Need help?";
+"alert_detail_controller_need_help_description" = "Talk to an expert and get help with any issues related to Identity Protection";
+"alert_detail_controller_button_contact_us" = "Contact us now";
+"alert_detail_controller_button_remind_me_later" = "Remind me later";
+"alert_detail_controller_button_mark_as_resolved" = "Mark as resolved";

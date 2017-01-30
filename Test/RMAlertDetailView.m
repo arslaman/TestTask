@@ -23,8 +23,9 @@
 - (void)configureWithData:(RMAlertDetailData *)data {
     self.imageView.image = [UIImage imageNamed:data.iconName];
     self.subjectLabel.text = data.subject;
-    self.fromLabel.text = [NSString stringWithFormat:@"From: %@", data.from];
-    self.dateLabel.text = [NSString stringWithFormat:@"Date of leak: %@", [data.date formatWithDashedMMDDYYYY]];
+    
+    self.fromLabel.text = [NSString localizedStringWithFormat:NSLocalizedString(@"alert_detail_controller_detail_from_%@", nil), data.from];
+    self.dateLabel.text = [NSString localizedStringWithFormat:NSLocalizedString(@"alert_detail_controller_detail_date_of_leak_%@", nil), [data.date formatWithShortDateStyle]];
 }
 
 @end

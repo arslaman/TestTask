@@ -16,6 +16,7 @@
 		44199B3F1E3F68E400A7E2D2 /* RMAlertNextStepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B3E1E3F68E400A7E2D2 /* RMAlertNextStepView.m */; };
 		44199B411E3F7C7900A7E2D2 /* RMAlertDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44199B401E3F7C7900A7E2D2 /* RMAlertDetailView.xib */; };
 		44199B441E3F7DC700A7E2D2 /* RMAlertDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B431E3F7DC700A7E2D2 /* RMAlertDetailView.m */; };
+		44199B491E3F920E00A7E2D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44199B4B1E3F920E00A7E2D2 /* Localizable.strings */; };
 		44199B4F1E3F933000A7E2D2 /* UIColor+RM.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B4E1E3F933000A7E2D2 /* UIColor+RM.m */; };
 		44199B521E3F985F00A7E2D2 /* NSDate+RMFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B511E3F985F00A7E2D2 /* NSDate+RMFormatter.m */; };
 		44686DD31E3A40F90012B44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44686DD21E3A40F90012B44C /* main.m */; };
@@ -56,6 +57,7 @@
 		44199B401E3F7C7900A7E2D2 /* RMAlertDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMAlertDetailView.xib; sourceTree = "<group>"; };
 		44199B421E3F7DC700A7E2D2 /* RMAlertDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAlertDetailView.h; sourceTree = "<group>"; };
 		44199B431E3F7DC700A7E2D2 /* RMAlertDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAlertDetailView.m; sourceTree = "<group>"; };
+		44199B4A1E3F920E00A7E2D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		44199B4D1E3F933000A7E2D2 /* UIColor+RM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RM.h"; sourceTree = "<group>"; };
 		44199B4E1E3F933000A7E2D2 /* UIColor+RM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RM.m"; sourceTree = "<group>"; };
 		44199B501E3F985F00A7E2D2 /* NSDate+RMFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RMFormatter.h"; sourceTree = "<group>"; };
@@ -147,6 +149,14 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		44199B461E3F914400A7E2D2 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				44199B4B1E3F920E00A7E2D2 /* Localizable.strings */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
 		44686DC51E3A40F90012B44C = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +245,7 @@
 		44686DF11E3B57510012B44C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				44199B461E3F914400A7E2D2 /* Localization */,
 				44199B381E3F5A3E00A7E2D2 /* Json */,
 				44686DF31E3B57690012B44C /* Storyboards */,
 				44686DF01E3B57380012B44C /* Views */,
@@ -448,6 +459,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		44199B4B1E3F920E00A7E2D2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44199B4A1E3F920E00A7E2D2 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		44686DDA1E3A40F90012B44C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
