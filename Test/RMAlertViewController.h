@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RMAlertData.h"
 #import "RMAlertDataHelperFactory.h"
+#import "RMRootWireframe.h"
 
 @interface RMAlertViewController : UIViewController
 
 - (void)configureWithData:(RMAlertData *)alertData
-            helperFactory:(id<RMAlertDataHelperFactory>)helperFactory;
+            helperFactory:(id<RMAlertDataHelperFactory>)helperFactory
+            rootWireframe:(id<RMRootWireframe>)rootWireframe;
 
 @end

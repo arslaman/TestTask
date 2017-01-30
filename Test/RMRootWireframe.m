@@ -8,6 +8,9 @@
 
 #import "RMRootWireframe.h"
 #import "RMAlertViewController.h"
+#import "RMContactUsAlertController.h"
+#import "RMRemindLaterAlertController.h"
+#import "RMMarkAsResolvedAlertController.h"
 
 static NSString * const StoryboardMain = @"Main";
 static NSString * const StoryboardAlert = @"Alert";
@@ -19,6 +22,10 @@ static NSString * const StoryboardAlert = @"Alert";
 @property (nonatomic, strong, readonly) id<RMServicesFactory> services;
 @property (nonatomic, strong) UIStoryboard *mainStoryboard;
 @property (nonatomic, strong) UIStoryboard *alertStoryboard;
+
+@property (nonatomic, strong) id<RMAlertController> contactUsAlertController;
+@property (nonatomic, strong) id<RMAlertController> remindLaterAlertController;
+@property (nonatomic, strong) id<RMAlertController> markAsResolvedAlertController;
 
 @end
 
@@ -55,7 +62,9 @@ static NSString * const StoryboardAlert = @"Alert";
     RMAlertViewController *vc = [self.alertStoryboard instantiateViewControllerWithIdentifier:NSStringFromClass([RMAlertViewController class])];
     
     RMAlertDataHelperFactory *helperFactory = [RMAlertDataHelperFactory new];
-    [vc configureWithData:data helperFactory:helperFactory];
+    [vc configureWithData:data
+            helperFactory:helperFactory
+            rootWireframe:self];
     
     UINavigationController *nc = [self.alertStoryboard instantiateInitialViewController];
     nc.viewControllers = @[vc];
@@ -65,6 +74,18 @@ static NSString * const StoryboardAlert = @"Alert";
                                                                       animated:YES
                                                                     completion:nil];
     });
+}
+
+- (void)presentContactUsAlertController {
+    [self.contactUsAlertController presentInController:self.navigationController.visibleViewController];
+}
+
+- (void)presentRemindLaterAlertController {
+    [self.remindLaterAlertController presentInController:self.navigationController.visibleViewController];
+}
+
+- (void)presentMarkAsResolvedAlertController {
+    [self.markAsResolvedAlertController presentInController:self.navigationController.visibleViewController];
 }
 
 #pragma mark Lazy Load
@@ -81,6 +102,27 @@ static NSString * const StoryboardAlert = @"Alert";
         _alertStoryboard = [UIStoryboard storyboardWithName:StoryboardAlert bundle:[NSBundle mainBundle]];
     }
     return _alertStoryboard;
+}
+
+- (id<RMAlertController>)contactUsAlertController {
+    if (!_contactUsAlertController) {
+        _contactUsAlertController = [RMContactUsAlertController new];
+    }
+    return _contactUsAlertController;
+}
+
+- (id<RMAlertController>)remindLaterAlertController {
+    if (!_remindLaterAlertController) {
+        _remindLaterAlertController = [RMRemindLaterAlertController new];
+    }
+    return _remindLaterAlertController;
+}
+
+- (id<RMAlertController>)markAsResolvedAlertController {
+    if (!_markAsResolvedAlertController) {
+        _markAsResolvedAlertController = [RMMarkAsResolvedAlertController new];
+    }
+    return _markAsResolvedAlertController;
 }
 
 @end

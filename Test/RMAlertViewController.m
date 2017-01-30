@@ -16,6 +16,7 @@
 @interface RMAlertViewController ()
 
 @property (nonatomic, strong) id<RMAlertDataHelper> dataHelper;
+@property (nonatomic, weak) id<RMRootWireframe> rootWireframe;
 @property (strong, nonatomic) IBOutlet UIImageView *headerImageView;
 @property (strong, nonatomic) IBOutlet UILabel *headerTitleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *headerDescriptionLabel;
@@ -35,9 +36,11 @@
 @implementation RMAlertViewController
 
 - (void)configureWithData:(RMAlertData *)alertData
-            helperFactory:(id<RMAlertDataHelperFactory>)helperFactory {
+            helperFactory:(id<RMAlertDataHelperFactory>)helperFactory
+            rootWireframe:(id<RMRootWireframe>)rootWireframe {
     
     self.dataHelper = [helperFactory helperWithData:alertData];
+    self.rootWireframe = rootWireframe;
 }
 
 - (void)viewDidLoad {
@@ -52,6 +55,8 @@
     
     [self setupLocalization];
 }
+
+#pragma mark Setup UI
 
 - (void)setupTitle {
     self.title = self.dataHelper.title;
@@ -76,7 +81,8 @@
 }
 
 - (void)setupRisks {
-    self.risksLabel.text = [self.dataHelper.risks componentsJoinedByString:@"\n"];
+    NSString *newLineCharacter = @"\n";
+    self.risksLabel.text = [self.dataHelper.risks componentsJoinedByString:newLineCharacter];
 }
 
 - (void)setupSteps {
@@ -138,6 +144,20 @@
     [previousView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(container);
     }];
+}
+
+#pragma mark Actions
+
+- (IBAction)contactUsAction:(id)sender {
+    [self.rootWireframe presentContactUsAlertController];
+}
+
+- (IBAction)remindMeLaterAction:(id)sender {
+    [self.rootWireframe presentRemindLaterAlertController];
+}
+
+- (IBAction)markAsResolvedAction:(id)sender {
+    [self.rootWireframe presentMarkAsResolvedAlertController];
 }
 
 @end

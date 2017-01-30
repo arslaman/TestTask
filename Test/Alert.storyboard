@@ -47,6 +47,9 @@
                                                 <state key="normal" title="Remind me later">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="remindMeLaterAction:" destination="bat-cm-Xh0" eventType="touchUpInside" id="Jdq-cx-9Bm"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bco-Td-3mo" customClass="RoundedRectButton">
                                                 <rect key="frame" x="290" y="0.0" width="280" height="44"/>
@@ -54,6 +57,9 @@
                                                 <state key="normal" title="Mark as resolved">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="markAsResolvedAction:" destination="bat-cm-Xh0" eventType="touchUpInside" id="ASj-Ye-QKg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -215,6 +221,9 @@
                                                 <state key="normal" title="Contact us now">
                                                     <color key="titleColor" red="0.23921568627450979" green="0.69803921568627447" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="contactUsAction:" destination="bat-cm-Xh0" eventType="touchUpInside" id="8hD-Q4-Iu2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

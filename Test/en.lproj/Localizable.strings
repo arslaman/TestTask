@@ -14,3 +14,17 @@
 "alert_detail_controller_button_contact_us" = "Contact us now";
 "alert_detail_controller_button_remind_me_later" = "Remind me later";
 "alert_detail_controller_button_mark_as_resolved" = "Mark as resolved";
+
+"alert_dialog_contact_us_title" = "Contact us";
+"alert_dialog_contact_us_message" = "Call our experts for help.";
+"alert_dialog_contact_us_button_call" = "Call";
+"alert_dialog_button_cancel" = "Cancel";
+
+"alert_dialog_remind_later_title" = "Reminder scheduled";
+"alert_dialog_remind_later_message" = "We’ll remind you about this alert tomorrow.";
+"alert_dialog_button_ok" = "OK";
+
+"alert_dialog_mark_as_resolved_title" = "Are you sure?";
+"alert_dialog_mark_as_resolved_message" = "Marking an alert as resolved means you will no longer be alerted on this leak and the alert will be removed.";
+"alert_dialog_button_yes" = "Yes";
+

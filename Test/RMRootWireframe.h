@@ -14,6 +14,10 @@
 - (void)presentHomeModule;
 - (void)presentAlertModuleWithData:(RMAlertData *)data;
 
+- (void)presentContactUsAlertController;
+- (void)presentRemindLaterAlertController;
+- (void)presentMarkAsResolvedAlertController;
+
 @end
 
 @interface RMRootWireframe : NSObject <RMRootWireframe>

@@ -38,6 +38,9 @@
 		44686E141E3B98820012B44C /* RoundedRectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 44686E111E3B98820012B44C /* RoundedRectButton.m */; };
 		44686E151E3B98820012B44C /* UIImage+ColorGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 44686E131E3B98820012B44C /* UIImage+ColorGenerator.m */; };
 		9799E8F0C551FE3EBE781D38 /* libPods-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 970F25F754D8706655A293FE /* libPods-Test.a */; };
+		9F49ADB41E3FE64E00312321 /* RMContactUsAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49ADB31E3FE64E00312321 /* RMContactUsAlertController.m */; };
+		9F49ADB71E3FE7F400312321 /* RMRemindLaterAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49ADB61E3FE7F400312321 /* RMRemindLaterAlertController.m */; };
+		9F49ADBA1E3FE88600312321 /* RMMarkAsResolvedAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49ADB91E3FE88600312321 /* RMMarkAsResolvedAlertController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +100,13 @@
 		44686E131E3B98820012B44C /* UIImage+ColorGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorGenerator.m"; sourceTree = "<group>"; };
 		864C9C40043184EE2EAE4205 /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		970F25F754D8706655A293FE /* libPods-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F49ADB11E3FE5CB00312321 /* RMAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAlertController.h; sourceTree = "<group>"; };
+		9F49ADB21E3FE64E00312321 /* RMContactUsAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMContactUsAlertController.h; sourceTree = "<group>"; };
+		9F49ADB31E3FE64E00312321 /* RMContactUsAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMContactUsAlertController.m; sourceTree = "<group>"; };
+		9F49ADB51E3FE7F400312321 /* RMRemindLaterAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMRemindLaterAlertController.h; sourceTree = "<group>"; };
+		9F49ADB61E3FE7F400312321 /* RMRemindLaterAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMRemindLaterAlertController.m; sourceTree = "<group>"; };
+		9F49ADB81E3FE88600312321 /* RMMarkAsResolvedAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMarkAsResolvedAlertController.h; sourceTree = "<group>"; };
+		9F49ADB91E3FE88600312321 /* RMMarkAsResolvedAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMarkAsResolvedAlertController.m; sourceTree = "<group>"; };
 		E09CEC85D8B423C44A557800 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +122,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		44199B2A1E3F39D300A7E2D2 /* AlertHelpers */ = {
+		44199B2A1E3F39D300A7E2D2 /* AlertDataHelpers */ = {
 			isa = PBXGroup;
 			children = (
 				44199B2B1E3F3A9400A7E2D2 /* RMAlertDataHelperFactory.h */,
@@ -125,7 +135,7 @@
 				44199B321E3F3F3C00A7E2D2 /* RMAlertDetailData.h */,
 				44199B331E3F3F3C00A7E2D2 /* RMAlertDetailData.m */,
 			);
-			name = AlertHelpers;
+			name = AlertDataHelpers;
 			sourceTree = "<group>";
 		};
 		44199B381E3F5A3E00A7E2D2 /* Json */ = {
@@ -180,7 +190,8 @@
 			children = (
 				44686DFC1E3B59CE0012B44C /* DataEntities */,
 				44686DEF1E3B57320012B44C /* Services */,
-				44686DEE1E3B57290012B44C /* Controllers */,
+				9F49ADB01E3FE59200312321 /* AlertControllers */,
+				44686DEE1E3B57290012B44C /* ViewControllers */,
 				44686DF11E3B57510012B44C /* Resources */,
 				44199B451E3F8B0A00A7E2D2 /* Categories */,
 				44686DD41E3A40F90012B44C /* AppDelegate.h */,
@@ -203,16 +214,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		44686DEE1E3B57290012B44C /* Controllers */ = {
+		44686DEE1E3B57290012B44C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				44199B2A1E3F39D300A7E2D2 /* AlertHelpers */,
+				44199B2A1E3F39D300A7E2D2 /* AlertDataHelpers */,
 				44686DD71E3A40F90012B44C /* ViewController.h */,
 				44686DD81E3A40F90012B44C /* ViewController.m */,
 				44686E0D1E3B94D20012B44C /* RMAlertViewController.h */,
 				44686E0E1E3B94D20012B44C /* RMAlertViewController.m */,
 			);
-			name = Controllers;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		44686DEF1E3B57320012B44C /* Services */ = {
@@ -301,6 +312,20 @@
 				970F25F754D8706655A293FE /* libPods-Test.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F49ADB01E3FE59200312321 /* AlertControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F49ADB11E3FE5CB00312321 /* RMAlertController.h */,
+				9F49ADB21E3FE64E00312321 /* RMContactUsAlertController.h */,
+				9F49ADB31E3FE64E00312321 /* RMContactUsAlertController.m */,
+				9F49ADB51E3FE7F400312321 /* RMRemindLaterAlertController.h */,
+				9F49ADB61E3FE7F400312321 /* RMRemindLaterAlertController.m */,
+				9F49ADB81E3FE88600312321 /* RMMarkAsResolvedAlertController.h */,
+				9F49ADB91E3FE88600312321 /* RMMarkAsResolvedAlertController.m */,
+			);
+			name = AlertControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,10 +462,12 @@
 				44199B341E3F3F3C00A7E2D2 /* RMAlertDetailData.m in Sources */,
 				44686E141E3B98820012B44C /* RoundedRectButton.m in Sources */,
 				44686E051E3B60310012B44C /* RMAlertCyberAgentEventData.m in Sources */,
+				9F49ADB41E3FE64E00312321 /* RMContactUsAlertController.m in Sources */,
 				44686DEA1E3A411C0012B44C /* RMRootWireframe.m in Sources */,
 				44686DED1E3A41E60012B44C /* RMServicesFactory.m in Sources */,
 				44199B4F1E3F933000A7E2D2 /* UIColor+RM.m in Sources */,
 				44686DD61E3A40F90012B44C /* AppDelegate.m in Sources */,
+				9F49ADBA1E3FE88600312321 /* RMMarkAsResolvedAlertController.m in Sources */,
 				44686DF61E3B57BE0012B44C /* RMPushService.m in Sources */,
 				44686E151E3B98820012B44C /* UIImage+ColorGenerator.m in Sources */,
 				44199B371E3F40EE00A7E2D2 /* RMAlertDataHelperCyberAgent.m in Sources */,
@@ -449,6 +476,7 @@
 				44199B311E3F3EC400A7E2D2 /* RMAlertNextStepData.m in Sources */,
 				44199B441E3F7DC700A7E2D2 /* RMAlertDetailView.m in Sources */,
 				44199B3F1E3F68E400A7E2D2 /* RMAlertNextStepView.m in Sources */,
+				9F49ADB71E3FE7F400312321 /* RMRemindLaterAlertController.m in Sources */,
 				44199B2D1E3F3A9400A7E2D2 /* RMAlertDataHelperFactory.m in Sources */,
 				44686DD31E3A40F90012B44C /* main.m in Sources */,
 				44199B521E3F985F00A7E2D2 /* NSDate+RMFormatter.m in Sources */,
