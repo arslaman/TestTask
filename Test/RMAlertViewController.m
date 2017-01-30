@@ -24,6 +24,11 @@
 @property (strong, nonatomic) IBOutlet UIView *stepsContainer;
 @property (strong, nonatomic) IBOutlet RoundedRectButton *remindMeLaterButton;
 @property (strong, nonatomic) IBOutlet RoundedRectButton *markAsResolvedButton;
+@property (weak, nonatomic) IBOutlet UILabel *risksTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *stepsTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *needHelpTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *needHelpDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIButton *contactUsButton;
 
 @end
 
@@ -44,6 +49,8 @@
     [self setupRisks];
     [self setupSteps];
     [self setupButtons];
+    
+    [self setupLocalization];
 }
 
 - (void)setupTitle {
@@ -52,7 +59,6 @@
 
 - (void)setupHeader {
     self.headerImageView.image = [UIImage imageNamed:self.dataHelper.iconName];
-    self.headerTitleLabel.text = @"Identity Risk";
     self.headerDescriptionLabel.text = self.dataHelper.description;
 }
 
@@ -97,6 +103,18 @@
     [self.markAsResolvedButton setCornerRadius:cornerRadius
                                   shadowColor:[UIColor blackColor]
                                   shadowWidth:shadowWidth];
+}
+
+- (void)setupLocalization {
+    self.headerTitleLabel.text = NSLocalizedString(@"alert_detail_controller_header_title", @"Alert's title in header");
+    self.risksTitleLabel.text = NSLocalizedString(@"alert_detail_controller_risks_title", @"Title of Risks section");
+    self.stepsTitleLabel.text = NSLocalizedString(@"alert_detail_controller_steps_title", @"Title of Next Steps section");
+    self.needHelpTitleLabel.text = NSLocalizedString(@"alert_detail_controller_need_help_title", @"Title of Need Help section");
+    self.needHelpDescriptionLabel.text = NSLocalizedString(@"alert_detail_controller_need_help_description", @"Description of Need Help section");
+    
+    [self.contactUsButton setTitle:NSLocalizedString(@"alert_detail_controller_button_contact_us", @"Title of Contact Us button") forState:UIControlStateNormal];
+    [self.remindMeLaterButton setTitle:NSLocalizedString(@"alert_detail_controller_button_remind_me_later", @"Title of Remind me later button") forState:UIControlStateNormal];
+    [self.markAsResolvedButton setTitle:NSLocalizedString(@"alert_detail_controller_button_mark_as_resolved", @"Title of Mark as resolved button") forState:UIControlStateNormal];
 }
 
 #pragma mark Private

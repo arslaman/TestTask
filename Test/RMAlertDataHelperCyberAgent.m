@@ -31,7 +31,7 @@
 }
 
 - (NSString *)title {
-    return @"Email Address Leaked";
+    return NSLocalizedString(@"alert_detail_controller_title_email_leaked", @"Title of Alert controller in case of email leak");
 }
 
 - (NSString *)iconName {
@@ -39,7 +39,7 @@
 }
 
 - (NSString *)description {
-    return @"Your email has been leaked";
+    return NSLocalizedString(@"alert_detail_controller_header_description_email_leaked", @"Description in header of Alert controller in case of email leak");
 }
 
 #pragma mark Details
@@ -123,7 +123,7 @@
     
     switch (eventData.match) {
         case RMAlertCyberAgentMatchEmailAddress:
-            return @"Your email and password were compromised and could be used to access other accounts.";
+            return NSLocalizedString(@"alert_detail_controller_risk_email", @"Title of Risk in case of email leak");
             break;
             
         default:
@@ -155,16 +155,22 @@
 - (NSArray<RMAlertNextStepData *> *)nextStepsWithEventData:(RMAlertCyberAgentEventData *)eventData {
     NSMutableArray *nextSteps = [NSMutableArray new];
     switch (eventData.match) {
-        case RMAlertCyberAgentMatchEmailAddress:
-            [nextSteps addObject:[[RMAlertNextStepData alloc] initWithTitle:@"Change your password immediately"
+        case RMAlertCyberAgentMatchEmailAddress: {
+            NSString *localizedTitle;
+            
+            localizedTitle = NSLocalizedString(@"alert_detail_controller_step_change_password_immediately", @"Step text of changing password immediately");
+            [nextSteps addObject:[[RMAlertNextStepData alloc] initWithTitle:localizedTitle
                                                                    iconName:@"ic-ellipsis-step.png"]];
             
-            [nextSteps addObject:[[RMAlertNextStepData alloc] initWithTitle:@"Change passwords for any accounts that share this email and password combo"
+            localizedTitle = NSLocalizedString(@"alert_detail_controller_step_change_password_other_accounts", @"Step text of changing password accounts that is related to leaked");
+            [nextSteps addObject:[[RMAlertNextStepData alloc] initWithTitle:localizedTitle
                                                                    iconName:@"ic-email-step.png"]];
             
-            [nextSteps addObject:[[RMAlertNextStepData alloc] initWithTitle:@"Keep an eye on accounts for any strange behavior"
+            localizedTitle = NSLocalizedString(@"alert_detail_controller_step_keep_an_eye", @"Step text of keeping an eye");
+            [nextSteps addObject:[[RMAlertNextStepData alloc] initWithTitle:localizedTitle
                                                                    iconName:@"ic-strangebehavior-step.png"]];
             break;
+        }
             
         default:
             break;

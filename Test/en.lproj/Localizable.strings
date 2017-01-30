@@ -1,5 +1,6 @@
 "alert_detail_controller_title_email_leaked" = "Email Address Leaked";
-"alert_detail_controller_description_email_leaked" = "Your email has been leaked";
+"alert_detail_controller_header_title" = "Identity Risk";
+"alert_detail_controller_header_description_email_leaked" = "Your email has been leaked";
 "alert_detail_controller_detail_from_%@" = "From: %@";
 "alert_detail_controller_detail_date_of_leak_%@" = "Date of leak: %@";
 "alert_detail_controller_risks_title" = "What's at risk";
