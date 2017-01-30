@@ -7,6 +7,7 @@
 //
 
 #import "RMAlertDetailView.h"
+#import "NSDate+RMFormatter.h"
 
 @interface RMAlertDetailView ()
 
@@ -22,8 +23,8 @@
 - (void)configureWithData:(RMAlertDetailData *)data {
     self.imageView.image = [UIImage imageNamed:data.iconName];
     self.subjectLabel.text = data.subject;
-    self.fromLabel.text = [NSString stringWithFormat:@"From: %@", data.subject];
-    self.dateLabel.text = [NSString stringWithFormat:@"Date of leak: %@", data.date];
+    self.fromLabel.text = [NSString stringWithFormat:@"From: %@", data.from];
+    self.dateLabel.text = [NSString stringWithFormat:@"Date of leak: %@", [data.date formatWithDashedMMDDYYYY]];
 }
 
 @end

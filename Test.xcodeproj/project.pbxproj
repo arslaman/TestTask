@@ -17,6 +17,7 @@
 		44199B411E3F7C7900A7E2D2 /* RMAlertDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44199B401E3F7C7900A7E2D2 /* RMAlertDetailView.xib */; };
 		44199B441E3F7DC700A7E2D2 /* RMAlertDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B431E3F7DC700A7E2D2 /* RMAlertDetailView.m */; };
 		44199B4F1E3F933000A7E2D2 /* UIColor+RM.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B4E1E3F933000A7E2D2 /* UIColor+RM.m */; };
+		44199B521E3F985F00A7E2D2 /* NSDate+RMFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B511E3F985F00A7E2D2 /* NSDate+RMFormatter.m */; };
 		44686DD31E3A40F90012B44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44686DD21E3A40F90012B44C /* main.m */; };
 		44686DD61E3A40F90012B44C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44686DD51E3A40F90012B44C /* AppDelegate.m */; };
 		44686DD91E3A40F90012B44C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44686DD81E3A40F90012B44C /* ViewController.m */; };
@@ -57,6 +58,8 @@
 		44199B431E3F7DC700A7E2D2 /* RMAlertDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAlertDetailView.m; sourceTree = "<group>"; };
 		44199B4D1E3F933000A7E2D2 /* UIColor+RM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RM.h"; sourceTree = "<group>"; };
 		44199B4E1E3F933000A7E2D2 /* UIColor+RM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RM.m"; sourceTree = "<group>"; };
+		44199B501E3F985F00A7E2D2 /* NSDate+RMFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RMFormatter.h"; sourceTree = "<group>"; };
+		44199B511E3F985F00A7E2D2 /* NSDate+RMFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RMFormatter.m"; sourceTree = "<group>"; };
 		44686DCE1E3A40F90012B44C /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44686DD21E3A40F90012B44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44686DD41E3A40F90012B44C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				44686E131E3B98820012B44C /* UIImage+ColorGenerator.m */,
 				44199B4D1E3F933000A7E2D2 /* UIColor+RM.h */,
 				44199B4E1E3F933000A7E2D2 /* UIColor+RM.m */,
+				44199B501E3F985F00A7E2D2 /* NSDate+RMFormatter.h */,
+				44199B511E3F985F00A7E2D2 /* NSDate+RMFormatter.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -435,6 +440,7 @@
 				44199B3F1E3F68E400A7E2D2 /* RMAlertNextStepView.m in Sources */,
 				44199B2D1E3F3A9400A7E2D2 /* RMAlertDataHelperFactory.m in Sources */,
 				44686DD31E3A40F90012B44C /* main.m in Sources */,
+				44199B521E3F985F00A7E2D2 /* NSDate+RMFormatter.m in Sources */,
 				44686DFB1E3B59C10012B44C /* RMParserService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

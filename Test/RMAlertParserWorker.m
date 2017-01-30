@@ -7,6 +7,7 @@
 //
 
 #import "RMAlertParserWorker.h"
+#import "NSDate+RMFormatter.h"
 
 static NSString * const AlertDataIdKey = @"id";
 static NSString * const AlertDataTypeKey = @"type";
@@ -80,13 +81,16 @@ static NSString * const AlertDataEventMatchRetailCard = @"IDRETAILCARD";
 }
 
 - (RMAlertCyberAgentEventData *)alertCyberAgentEventDataWithData:(NSDictionary *)data {
-    NSString *date = data[AlertDataEventDateKey];
+    NSDate *date = [NSDate dateWithShortStyleString:data[AlertDataEventDateKey]];
+    
     data = data[AlertDataEventDataKey];
     RMAlertCyberAgentMatch match = [self cyberAgentMatchWithStringValue:data[AlertDataEventMatchKey]];
+    NSDate *sourceDate = [NSDate dateWithFullStyleString:data[AlertDataEventSourceDateKey]];
+    NSDate *creationDate = [NSDate dateWithFullStyleString:data[AlertDataEventCreationDateKey]];
     
     return [[RMAlertCyberAgentEventData alloc] initWithDate:date
-                                                 sourceDate:data[AlertDataEventSourceDateKey]
-                                               creationDate:data[AlertDataEventCreationDateKey]
+                                                 sourceDate:sourceDate
+                                               creationDate:creationDate
                                                        site:data[AlertDataEventSiteKey]
                                                      source:data[AlertDataEventSourceKey]
                                                       match:match
