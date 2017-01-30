@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "RMAlertData.h"
+#import "RMAlertDataHelperFactory.h"
 
 @interface RMAlertViewController : UIViewController
 
-@property (nonatomic, strong) RMAlertData *alertData;
+- (void)configureWithData:(RMAlertData *)alertData
+            helperFactory:(id<RMAlertDataHelperFactory>)helperFactory;
 
 @end

@@ -40,7 +40,7 @@ static NSString * const AlertDataEventMatchRetailCard = @"IDRETAILCARD";
     
     NSString *identifier = data[AlertDataIdKey];
     RMAlertType type = [self alertTypeWithIntegerValue:[data[AlertDataTypeKey] integerValue]];
-    NSArray *events = nil;
+    NSArray *events = [self alertEventsWithData:data[AlertDataEventsKey] type:type];
     
     RMAlertData *alertData = [[RMAlertData alloc] initWithType:type
                                                     identifier:identifier
@@ -107,19 +107,19 @@ static NSString * const AlertDataEventMatchRetailCard = @"IDRETAILCARD";
     } else if ([stringValue isEqualToString:AlertDataEventMatchCellPhone]) {
         return RMAlertCyberAgentMatchCellPhone;
     } else if ([stringValue isEqualToString:AlertDataEventMatchEmailAddress]) {
-        return RMAlertCyberAgentMatchDLNumber;
+        return RMAlertCyberAgentMatchEmailAddress;
     } else if ([stringValue isEqualToString:AlertDataEventMatchCCN]) {
-        return RMAlertCyberAgentMatchDLNumber;
+        return RMAlertCyberAgentMatchCCN;
     } else if ([stringValue isEqualToString:AlertDataEventMatchBank]) {
-        return RMAlertCyberAgentMatchDLNumber;
+        return RMAlertCyberAgentMatchBank;
     } else if ([stringValue isEqualToString:AlertDataEventMatchNational]) {
-        return RMAlertCyberAgentMatchDLNumber;
+        return RMAlertCyberAgentMatchNational;
     } else if ([stringValue isEqualToString:AlertDataEventMatchIBAN]) {
-        return RMAlertCyberAgentMatchDLNumber;
+        return RMAlertCyberAgentMatchIBAN;
     } else if ([stringValue isEqualToString:AlertDataEventMatchPassportNumber]) {
-        return RMAlertCyberAgentMatchDLNumber;
+        return RMAlertCyberAgentMatchPassportNumber;
     } else if ([stringValue isEqualToString:AlertDataEventMatchRetailCard]) {
-        return RMAlertCyberAgentMatchDLNumber;
+        return RMAlertCyberAgentMatchRetailCard;
     }
     return RMAlertCyberAgentMatchUnknown;
 }

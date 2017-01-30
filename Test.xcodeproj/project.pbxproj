@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44199B2D1E3F3A9400A7E2D2 /* RMAlertDataHelperFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B2C1E3F3A9400A7E2D2 /* RMAlertDataHelperFactory.m */; };
+		44199B311E3F3EC400A7E2D2 /* RMAlertNextStepData.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B301E3F3EC400A7E2D2 /* RMAlertNextStepData.m */; };
+		44199B341E3F3F3C00A7E2D2 /* RMAlertDetailData.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B331E3F3F3C00A7E2D2 /* RMAlertDetailData.m */; };
+		44199B371E3F40EE00A7E2D2 /* RMAlertDataHelperCyberAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B361E3F40EE00A7E2D2 /* RMAlertDataHelperCyberAgent.m */; };
+		44199B3A1E3F5A5000A7E2D2 /* email-alert.json in Resources */ = {isa = PBXBuildFile; fileRef = 44199B391E3F5A5000A7E2D2 /* email-alert.json */; };
+		44199B3C1E3F66E800A7E2D2 /* RMAlertNextStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44199B3B1E3F66E800A7E2D2 /* RMAlertNextStepView.xib */; };
+		44199B3F1E3F68E400A7E2D2 /* RMAlertNextStepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B3E1E3F68E400A7E2D2 /* RMAlertNextStepView.m */; };
+		44199B411E3F7C7900A7E2D2 /* RMAlertDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44199B401E3F7C7900A7E2D2 /* RMAlertDetailView.xib */; };
+		44199B441E3F7DC700A7E2D2 /* RMAlertDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B431E3F7DC700A7E2D2 /* RMAlertDetailView.m */; };
+		44199B4F1E3F933000A7E2D2 /* UIColor+RM.m in Sources */ = {isa = PBXBuildFile; fileRef = 44199B4E1E3F933000A7E2D2 /* UIColor+RM.m */; };
 		44686DD31E3A40F90012B44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44686DD21E3A40F90012B44C /* main.m */; };
 		44686DD61E3A40F90012B44C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44686DD51E3A40F90012B44C /* AppDelegate.m */; };
 		44686DD91E3A40F90012B44C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44686DD81E3A40F90012B44C /* ViewController.m */; };
@@ -25,9 +35,28 @@
 		44686E0F1E3B94D20012B44C /* RMAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44686E0E1E3B94D20012B44C /* RMAlertViewController.m */; };
 		44686E141E3B98820012B44C /* RoundedRectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 44686E111E3B98820012B44C /* RoundedRectButton.m */; };
 		44686E151E3B98820012B44C /* UIImage+ColorGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 44686E131E3B98820012B44C /* UIImage+ColorGenerator.m */; };
+		9799E8F0C551FE3EBE781D38 /* libPods-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 970F25F754D8706655A293FE /* libPods-Test.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44199B2B1E3F3A9400A7E2D2 /* RMAlertDataHelperFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAlertDataHelperFactory.h; sourceTree = "<group>"; };
+		44199B2C1E3F3A9400A7E2D2 /* RMAlertDataHelperFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAlertDataHelperFactory.m; sourceTree = "<group>"; };
+		44199B2E1E3F3ABD00A7E2D2 /* RMAlertDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAlertDataHelper.h; sourceTree = "<group>"; };
+		44199B2F1E3F3EC400A7E2D2 /* RMAlertNextStepData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAlertNextStepData.h; sourceTree = "<group>"; };
+		44199B301E3F3EC400A7E2D2 /* RMAlertNextStepData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAlertNextStepData.m; sourceTree = "<group>"; };
+		44199B321E3F3F3C00A7E2D2 /* RMAlertDetailData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAlertDetailData.h; sourceTree = "<group>"; };
+		44199B331E3F3F3C00A7E2D2 /* RMAlertDetailData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAlertDetailData.m; sourceTree = "<group>"; };
+		44199B351E3F40EE00A7E2D2 /* RMAlertDataHelperCyberAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAlertDataHelperCyberAgent.h; sourceTree = "<group>"; };
+		44199B361E3F40EE00A7E2D2 /* RMAlertDataHelperCyberAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAlertDataHelperCyberAgent.m; sourceTree = "<group>"; };
+		44199B391E3F5A5000A7E2D2 /* email-alert.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "email-alert.json"; sourceTree = "<group>"; };
+		44199B3B1E3F66E800A7E2D2 /* RMAlertNextStepView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMAlertNextStepView.xib; sourceTree = "<group>"; };
+		44199B3D1E3F68E400A7E2D2 /* RMAlertNextStepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAlertNextStepView.h; sourceTree = "<group>"; };
+		44199B3E1E3F68E400A7E2D2 /* RMAlertNextStepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAlertNextStepView.m; sourceTree = "<group>"; };
+		44199B401E3F7C7900A7E2D2 /* RMAlertDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMAlertDetailView.xib; sourceTree = "<group>"; };
+		44199B421E3F7DC700A7E2D2 /* RMAlertDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAlertDetailView.h; sourceTree = "<group>"; };
+		44199B431E3F7DC700A7E2D2 /* RMAlertDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAlertDetailView.m; sourceTree = "<group>"; };
+		44199B4D1E3F933000A7E2D2 /* UIColor+RM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RM.h"; sourceTree = "<group>"; };
+		44199B4E1E3F933000A7E2D2 /* UIColor+RM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RM.m"; sourceTree = "<group>"; };
 		44686DCE1E3A40F90012B44C /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44686DD21E3A40F90012B44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44686DD41E3A40F90012B44C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +90,9 @@
 		44686E111E3B98820012B44C /* RoundedRectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedRectButton.m; sourceTree = "<group>"; };
 		44686E121E3B98820012B44C /* UIImage+ColorGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorGenerator.h"; sourceTree = "<group>"; };
 		44686E131E3B98820012B44C /* UIImage+ColorGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorGenerator.m"; sourceTree = "<group>"; };
+		864C9C40043184EE2EAE4205 /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		970F25F754D8706655A293FE /* libPods-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09CEC85D8B423C44A557800 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,17 +100,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9799E8F0C551FE3EBE781D38 /* libPods-Test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44199B2A1E3F39D300A7E2D2 /* AlertHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				44199B2B1E3F3A9400A7E2D2 /* RMAlertDataHelperFactory.h */,
+				44199B2C1E3F3A9400A7E2D2 /* RMAlertDataHelperFactory.m */,
+				44199B2E1E3F3ABD00A7E2D2 /* RMAlertDataHelper.h */,
+				44199B351E3F40EE00A7E2D2 /* RMAlertDataHelperCyberAgent.h */,
+				44199B361E3F40EE00A7E2D2 /* RMAlertDataHelperCyberAgent.m */,
+				44199B2F1E3F3EC400A7E2D2 /* RMAlertNextStepData.h */,
+				44199B301E3F3EC400A7E2D2 /* RMAlertNextStepData.m */,
+				44199B321E3F3F3C00A7E2D2 /* RMAlertDetailData.h */,
+				44199B331E3F3F3C00A7E2D2 /* RMAlertDetailData.m */,
+			);
+			name = AlertHelpers;
+			sourceTree = "<group>";
+		};
+		44199B381E3F5A3E00A7E2D2 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				44199B391E3F5A5000A7E2D2 /* email-alert.json */,
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
+		44199B451E3F8B0A00A7E2D2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				44686E121E3B98820012B44C /* UIImage+ColorGenerator.h */,
+				44686E131E3B98820012B44C /* UIImage+ColorGenerator.m */,
+				44199B4D1E3F933000A7E2D2 /* UIColor+RM.h */,
+				44199B4E1E3F933000A7E2D2 /* UIColor+RM.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		44686DC51E3A40F90012B44C = {
 			isa = PBXGroup;
 			children = (
 				44686DD01E3A40F90012B44C /* Test */,
 				44686DCF1E3A40F90012B44C /* Products */,
+				8A26174EA19A669E758D1383 /* Pods */,
+				8EC5E690C511DBA33CC565AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +167,7 @@
 				44686DEF1E3B57320012B44C /* Services */,
 				44686DEE1E3B57290012B44C /* Controllers */,
 				44686DF11E3B57510012B44C /* Resources */,
+				44199B451E3F8B0A00A7E2D2 /* Categories */,
 				44686DD41E3A40F90012B44C /* AppDelegate.h */,
 				44686DD51E3A40F90012B44C /* AppDelegate.m */,
 				44686DE81E3A411C0012B44C /* RMRootWireframe.h */,
@@ -120,6 +191,7 @@
 		44686DEE1E3B57290012B44C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				44199B2A1E3F39D300A7E2D2 /* AlertHelpers */,
 				44686DD71E3A40F90012B44C /* ViewController.h */,
 				44686DD81E3A40F90012B44C /* ViewController.m */,
 				44686E0D1E3B94D20012B44C /* RMAlertViewController.h */,
@@ -145,8 +217,12 @@
 			children = (
 				44686E101E3B98820012B44C /* RoundedRectButton.h */,
 				44686E111E3B98820012B44C /* RoundedRectButton.m */,
-				44686E121E3B98820012B44C /* UIImage+ColorGenerator.h */,
-				44686E131E3B98820012B44C /* UIImage+ColorGenerator.m */,
+				44199B3B1E3F66E800A7E2D2 /* RMAlertNextStepView.xib */,
+				44199B3D1E3F68E400A7E2D2 /* RMAlertNextStepView.h */,
+				44199B3E1E3F68E400A7E2D2 /* RMAlertNextStepView.m */,
+				44199B401E3F7C7900A7E2D2 /* RMAlertDetailView.xib */,
+				44199B421E3F7DC700A7E2D2 /* RMAlertDetailView.h */,
+				44199B431E3F7DC700A7E2D2 /* RMAlertDetailView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -154,6 +230,7 @@
 		44686DF11E3B57510012B44C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				44199B381E3F5A3E00A7E2D2 /* Json */,
 				44686DF31E3B57690012B44C /* Storyboards */,
 				44686DF01E3B57380012B44C /* Views */,
 				44686DDD1E3A40F90012B44C /* Assets.xcassets */,
@@ -193,6 +270,23 @@
 			name = ParserWorkers;
 			sourceTree = "<group>";
 		};
+		8A26174EA19A669E758D1383 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				864C9C40043184EE2EAE4205 /* Pods-Test.debug.xcconfig */,
+				E09CEC85D8B423C44A557800 /* Pods-Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8EC5E690C511DBA33CC565AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				970F25F754D8706655A293FE /* libPods-Test.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,9 +294,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44686DE51E3A40F90012B44C /* Build configuration list for PBXNativeTarget "Test" */;
 			buildPhases = (
+				230851153C96EDC7F3D64080 /* [CP] Check Pods Manifest.lock */,
 				44686DCA1E3A40F90012B44C /* Sources */,
 				44686DCB1E3A40F90012B44C /* Frameworks */,
 				44686DCC1E3A40F90012B44C /* Resources */,
+				D72542A260CF3DA5D7477220 /* [CP] Embed Pods Frameworks */,
+				B614A5298F77B63F9A5C5663 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,14 +349,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44199B3A1E3F5A5000A7E2D2 /* email-alert.json in Resources */,
 				44686DE11E3A40F90012B44C /* LaunchScreen.storyboard in Resources */,
 				44686DDE1E3A40F90012B44C /* Assets.xcassets in Resources */,
 				44686DDC1E3A40F90012B44C /* Main.storyboard in Resources */,
 				44686E0C1E3B94940012B44C /* Alert.storyboard in Resources */,
+				44199B491E3F920E00A7E2D2 /* Localizable.strings in Resources */,
+				44199B411E3F7C7900A7E2D2 /* RMAlertDetailView.xib in Resources */,
+				44199B3C1E3F66E800A7E2D2 /* RMAlertNextStepView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		230851153C96EDC7F3D64080 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B614A5298F77B63F9A5C5663 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test/Pods-Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D72542A260CF3DA5D7477220 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test/Pods-Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44686DCA1E3A40F90012B44C /* Sources */ = {
@@ -269,15 +418,22 @@
 				44686E0F1E3B94D20012B44C /* RMAlertViewController.m in Sources */,
 				44686DD91E3A40F90012B44C /* ViewController.m in Sources */,
 				44686DFF1E3B5A6A0012B44C /* RMAlertData.m in Sources */,
+				44199B341E3F3F3C00A7E2D2 /* RMAlertDetailData.m in Sources */,
 				44686E141E3B98820012B44C /* RoundedRectButton.m in Sources */,
 				44686E051E3B60310012B44C /* RMAlertCyberAgentEventData.m in Sources */,
 				44686DEA1E3A411C0012B44C /* RMRootWireframe.m in Sources */,
 				44686DED1E3A41E60012B44C /* RMServicesFactory.m in Sources */,
+				44199B4F1E3F933000A7E2D2 /* UIColor+RM.m in Sources */,
 				44686DD61E3A40F90012B44C /* AppDelegate.m in Sources */,
 				44686DF61E3B57BE0012B44C /* RMPushService.m in Sources */,
 				44686E151E3B98820012B44C /* UIImage+ColorGenerator.m in Sources */,
+				44199B371E3F40EE00A7E2D2 /* RMAlertDataHelperCyberAgent.m in Sources */,
 				44686E091E3B7AA90012B44C /* RMAlertParserWorker.m in Sources */,
 				44686E021E3B5B710012B44C /* RMAlertEventData.m in Sources */,
+				44199B311E3F3EC400A7E2D2 /* RMAlertNextStepData.m in Sources */,
+				44199B441E3F7DC700A7E2D2 /* RMAlertDetailView.m in Sources */,
+				44199B3F1E3F68E400A7E2D2 /* RMAlertNextStepView.m in Sources */,
+				44199B2D1E3F3A9400A7E2D2 /* RMAlertDataHelperFactory.m in Sources */,
 				44686DD31E3A40F90012B44C /* main.m in Sources */,
 				44686DFB1E3B59C10012B44C /* RMParserService.m in Sources */,
 			);
@@ -397,6 +553,7 @@
 		};
 		44686DE61E3A40F90012B44C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 864C9C40043184EE2EAE4205 /* Pods-Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Test/Info.plist;
@@ -408,6 +565,7 @@
 		};
 		44686DE71E3A40F90012B44C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E09CEC85D8B423C44A557800 /* Pods-Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Test/Info.plist;
@@ -436,6 +594,7 @@
 				44686DE71E3A40F90012B44C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

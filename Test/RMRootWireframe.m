@@ -41,10 +41,6 @@ static NSString * const StoryboardAlert = @"Alert";
     self.navigationController = nc;
     
     [self presentHomeModule];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self presentAlertModuleWithData:nil];
-    });
 }
 
 #pragma mark RMRootWireframe
@@ -55,12 +51,20 @@ static NSString * const StoryboardAlert = @"Alert";
 }
 
 - (void)presentAlertModuleWithData:(RMAlertData *)data {
-    RMAlertViewController *vc = [self.alertStoryboard instantiateInitialViewController];
-//    vc.alertData = data;
     
-    [self.navigationController.visibleViewController presentViewController:vc
-                                                                  animated:YES
-                                                                completion:nil];
+    RMAlertViewController *vc = [self.alertStoryboard instantiateViewControllerWithIdentifier:NSStringFromClass([RMAlertViewController class])];
+    
+    RMAlertDataHelperFactory *helperFactory = [RMAlertDataHelperFactory new];
+    [vc configureWithData:data helperFactory:helperFactory];
+    
+    UINavigationController *nc = [self.alertStoryboard instantiateInitialViewController];
+    nc.viewControllers = @[vc];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.navigationController.visibleViewController presentViewController:nc
+                                                                      animated:YES
+                                                                    completion:nil];
+    });
 }
 
 #pragma mark Lazy Load

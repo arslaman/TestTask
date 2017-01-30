@@ -10,6 +10,8 @@
 #import "RMPushService.h"
 #import "RMParserService.h"
 
+@protocol RMRootWireframe;
+
 @protocol RMServicesFactory <NSObject>
 
 @property (nonatomic, strong, readonly) id<RMPushService> pushService;
@@ -18,5 +20,7 @@
 @end
 
 @interface RMServicesFactory : NSObject <RMServicesFactory>
+
+@property (nonatomic, weak) id<RMRootWireframe> rootWireframe;
 
 @end

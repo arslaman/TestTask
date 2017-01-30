@@ -24,6 +24,7 @@
     self = [super init];
     if (self) {
         _rootWireframe = rootWireframe;
+        _parserService = parserService;
     }
     return self;
 }
