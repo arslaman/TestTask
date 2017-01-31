@@ -41,10 +41,28 @@
 		9F49ADB41E3FE64E00312321 /* RMContactUsAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49ADB31E3FE64E00312321 /* RMContactUsAlertController.m */; };
 		9F49ADB71E3FE7F400312321 /* RMRemindLaterAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49ADB61E3FE7F400312321 /* RMRemindLaterAlertController.m */; };
 		9F49ADBA1E3FE88600312321 /* RMMarkAsResolvedAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49ADB91E3FE88600312321 /* RMMarkAsResolvedAlertController.m */; };
+		9F49ADCA1E3FF3E200312321 /* RMParserServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49ADC91E3FF3E200312321 /* RMParserServiceTests.m */; };
+		9F49ADCC1E3FF5E900312321 /* RMPushServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49ADCB1E3FF5E900312321 /* RMPushServiceTests.m */; };
+		9F49ADCE1E3FF8A400312321 /* RMAlertParserWorkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49ADCD1E3FF8A400312321 /* RMAlertParserWorkerTests.m */; };
+		9F49ADD01E40008B00312321 /* RMAlertDataHelperFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49ADCF1E40008B00312321 /* RMAlertDataHelperFactoryTests.m */; };
+		9F49ADD21E4008A800312321 /* RMAlertViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F49ADD11E4008A800312321 /* RMAlertViewControllerTests.m */; };
+		C690EEF39719F7BB48697CEE /* libPods-TestTaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC4C2EC729AFBBEE41340B7 /* libPods-TestTaskTests.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9F49ADC41E3FF2A100312321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44686DC61E3A40F90012B44C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44686DCD1E3A40F90012B44C;
+			remoteInfo = TestTask;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		03160A58C0C208FC9B6B1DE0 /* Pods-TestTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskTests/Pods-TestTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		08A1D11241B87F4FD37B4D18 /* Pods-TestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestTask/Pods-TestTask.release.xcconfig"; sourceTree = "<group>"; };
+		2BC81865C37222618D0803EE /* Pods-TestTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskTests/Pods-TestTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		44199B2B1E3F3A9400A7E2D2 /* RMAlertDataHelperFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAlertDataHelperFactory.h; sourceTree = "<group>"; };
 		44199B2C1E3F3A9400A7E2D2 /* RMAlertDataHelperFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAlertDataHelperFactory.m; sourceTree = "<group>"; };
 		44199B2E1E3F3ABD00A7E2D2 /* RMAlertDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAlertDataHelper.h; sourceTree = "<group>"; };
@@ -110,6 +128,14 @@
 		9F49ADB61E3FE7F400312321 /* RMRemindLaterAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMRemindLaterAlertController.m; sourceTree = "<group>"; };
 		9F49ADB81E3FE88600312321 /* RMMarkAsResolvedAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMarkAsResolvedAlertController.h; sourceTree = "<group>"; };
 		9F49ADB91E3FE88600312321 /* RMMarkAsResolvedAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMarkAsResolvedAlertController.m; sourceTree = "<group>"; };
+		9F49ADBF1E3FF2A100312321 /* TestTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F49ADC31E3FF2A100312321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F49ADC91E3FF3E200312321 /* RMParserServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMParserServiceTests.m; sourceTree = "<group>"; };
+		9F49ADCB1E3FF5E900312321 /* RMPushServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPushServiceTests.m; sourceTree = "<group>"; };
+		9F49ADCD1E3FF8A400312321 /* RMAlertParserWorkerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAlertParserWorkerTests.m; sourceTree = "<group>"; };
+		9F49ADCF1E40008B00312321 /* RMAlertDataHelperFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAlertDataHelperFactoryTests.m; sourceTree = "<group>"; };
+		9F49ADD11E4008A800312321 /* RMAlertViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAlertViewControllerTests.m; sourceTree = "<group>"; };
+		CDC4C2EC729AFBBEE41340B7 /* libPods-TestTaskTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTaskTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09CEC85D8B423C44A557800 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +145,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				98AFD819BC0B18D23643444D /* libPods-TestTask.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F49ADBC1E3FF2A100312321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C690EEF39719F7BB48697CEE /* libPods-TestTaskTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				44686DD01E3A40F90012B44C /* TestTask */,
+				9F49ADC01E3FF2A100312321 /* TestTaskTests */,
 				44686DCF1E3A40F90012B44C /* Products */,
 				8A26174EA19A669E758D1383 /* Pods */,
 				8EC5E690C511DBA33CC565AA /* Frameworks */,
@@ -184,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				44686DCE1E3A40F90012B44C /* TestTask.app */,
+				9F49ADBF1E3FF2A100312321 /* TestTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,6 +344,8 @@
 				E09CEC85D8B423C44A557800 /* Pods-Test.release.xcconfig */,
 				9926B2A0C40A523B6D0409AF /* Pods-TestTask.debug.xcconfig */,
 				08A1D11241B87F4FD37B4D18 /* Pods-TestTask.release.xcconfig */,
+				03160A58C0C208FC9B6B1DE0 /* Pods-TestTaskTests.debug.xcconfig */,
+				2BC81865C37222618D0803EE /* Pods-TestTaskTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -317,6 +355,7 @@
 			children = (
 				970F25F754D8706655A293FE /* libPods-Test.a */,
 				9C5696694364CA8AA0E3B558 /* libPods-TestTask.a */,
+				CDC4C2EC729AFBBEE41340B7 /* libPods-TestTaskTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -333,6 +372,19 @@
 				9F49ADB91E3FE88600312321 /* RMMarkAsResolvedAlertController.m */,
 			);
 			name = AlertControllers;
+			sourceTree = "<group>";
+		};
+		9F49ADC01E3FF2A100312321 /* TestTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F49ADC31E3FF2A100312321 /* Info.plist */,
+				9F49ADC91E3FF3E200312321 /* RMParserServiceTests.m */,
+				9F49ADCB1E3FF5E900312321 /* RMPushServiceTests.m */,
+				9F49ADCD1E3FF8A400312321 /* RMAlertParserWorkerTests.m */,
+				9F49ADCF1E40008B00312321 /* RMAlertDataHelperFactoryTests.m */,
+				9F49ADD11E4008A800312321 /* RMAlertViewControllerTests.m */,
+			);
+			path = TestTaskTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +410,27 @@
 			productReference = 44686DCE1E3A40F90012B44C /* TestTask.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9F49ADBE1E3FF2A100312321 /* TestTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F49ADC61E3FF2A100312321 /* Build configuration list for PBXNativeTarget "TestTaskTests" */;
+			buildPhases = (
+				8263FB2363C36506BF871FFE /* [CP] Check Pods Manifest.lock */,
+				9F49ADBB1E3FF2A100312321 /* Sources */,
+				9F49ADBC1E3FF2A100312321 /* Frameworks */,
+				9F49ADBD1E3FF2A100312321 /* Resources */,
+				C2CD9C2992521C8EB5729F70 /* [CP] Embed Pods Frameworks */,
+				CCC6E904DB80AC9BEF0414E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F49ADC51E3FF2A100312321 /* PBXTargetDependency */,
+			);
+			name = TestTaskTests;
+			productName = TestTaskTests;
+			productReference = 9F49ADBF1E3FF2A100312321 /* TestTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -371,6 +444,11 @@
 					44686DCD1E3A40F90012B44C = {
 						CreatedOnToolsVersion = 8.2;
 						ProvisioningStyle = Automatic;
+					};
+					9F49ADBE1E3FF2A100312321 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 44686DCD1E3A40F90012B44C;
 					};
 				};
 			};
@@ -388,6 +466,7 @@
 			projectRoot = "";
 			targets = (
 				44686DCD1E3A40F90012B44C /* TestTask */,
+				9F49ADBE1E3FF2A100312321 /* TestTaskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -408,10 +487,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F49ADBD1E3FF2A100312321 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		230851153C96EDC7F3D64080 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8263FB2363C36506BF871FFE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -439,6 +540,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestTask/Pods-TestTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2CD9C2992521C8EB5729F70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskTests/Pods-TestTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCC6E904DB80AC9BEF0414E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskTests/Pods-TestTaskTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D72542A260CF3DA5D7477220 /* [CP] Embed Pods Frameworks */ = {
@@ -491,7 +622,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F49ADBB1E3FF2A100312321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F49ADCE1E3FF8A400312321 /* RMAlertParserWorkerTests.m in Sources */,
+				9F49ADCC1E3FF5E900312321 /* RMPushServiceTests.m in Sources */,
+				9F49ADD21E4008A800312321 /* RMAlertViewControllerTests.m in Sources */,
+				9F49ADD01E40008B00312321 /* RMAlertDataHelperFactoryTests.m in Sources */,
+				9F49ADCA1E3FF3E200312321 /* RMParserServiceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F49ADC51E3FF2A100312321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44686DCD1E3A40F90012B44C /* TestTask */;
+			targetProxy = 9F49ADC41E3FF2A100312321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		44199B4B1E3F920E00A7E2D2 /* Localizable.strings */ = {
@@ -635,6 +786,32 @@
 			};
 			name = Release;
 		};
+		9F49ADC71E3FF2A100312321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03160A58C0C208FC9B6B1DE0 /* Pods-TestTaskTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akvelon.TestTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestTask.app/TestTask";
+			};
+			name = Debug;
+		};
+		9F49ADC81E3FF2A100312321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BC81865C37222618D0803EE /* Pods-TestTaskTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akvelon.TestTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestTask.app/TestTask";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -652,6 +829,15 @@
 			buildConfigurations = (
 				44686DE61E3A40F90012B44C /* Debug */,
 				44686DE71E3A40F90012B44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F49ADC61E3FF2A100312321 /* Build configuration list for PBXNativeTarget "TestTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F49ADC71E3FF2A100312321 /* Debug */,
+				9F49ADC81E3FF2A100312321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

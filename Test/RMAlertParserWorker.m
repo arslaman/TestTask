@@ -85,7 +85,7 @@ static NSString * const AlertDataEventMatchRetailCard = @"IDRETAILCARD";
     
     data = data[AlertDataEventDataKey];
     RMAlertCyberAgentMatch match = [self cyberAgentMatchWithStringValue:data[AlertDataEventMatchKey]];
-    NSDate *sourceDate = [NSDate dateWithFullStyleString:data[AlertDataEventSourceDateKey]];
+    NSDate *sourceDate = [NSDate dateWithShortStyleString:data[AlertDataEventSourceDateKey]];
     NSDate *creationDate = [NSDate dateWithFullStyleString:data[AlertDataEventCreationDateKey]];
     
     return [[RMAlertCyberAgentEventData alloc] initWithDate:date
