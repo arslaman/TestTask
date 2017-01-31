@@ -18,7 +18,7 @@ typedef NS_ENUM(NSUInteger, RMAlertType) {
 
 @interface RMAlertData : NSObject
 
-@property (nonatomic, strong, readonly) NSString *identifier;
+@property (nonatomic, copy, readonly) NSString *identifier;
 @property (nonatomic, assign, readonly) RMAlertType type;
 @property (nonatomic, strong, readonly) NSArray <RMAlertEventData *> *events;
 

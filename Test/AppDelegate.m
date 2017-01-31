@@ -30,6 +30,7 @@
     self.servicesFactory.rootWireframe = self.rootWireframe;
     [self.rootWireframe installToWindow:self.window];
     
+    // imitating situation that we received push notification
     launchOptions = [self fakeLaunchOptionsWithAlertData];
     
     if (launchOptions != nil) {

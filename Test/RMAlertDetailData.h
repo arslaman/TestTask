@@ -10,9 +10,9 @@
 
 @interface RMAlertDetailData : NSObject
 
-@property (nonatomic, strong, readonly) NSString *iconName;
-@property (nonatomic, strong, readonly) NSString *subject;
-@property (nonatomic, strong, readonly) NSString *from;
+@property (nonatomic, copy, readonly) NSString *iconName;
+@property (nonatomic, copy, readonly) NSString *subject;
+@property (nonatomic, copy, readonly) NSString *from;
 @property (nonatomic, strong, readonly) NSDate *date;
 
 - (instancetype)initWithSubject:(NSString *)subject

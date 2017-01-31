@@ -14,6 +14,15 @@
 
 @protocol RMPushService <NSObject>
 
+/**
+ * Handles received notification
+ * 
+ * Invoke it with appropriate data at AppDelegate's "application:didFinishLaunchingWithOptions:"
+ * and "application:didReceiveRemoteNotification:".
+ * It will parse notification data and present AlertViewController.
+ *
+ * @param userInfo dictionary data of received push notification
+ */
 - (void)receivedNotification:(NSDictionary *)userInfo;
 
 @end

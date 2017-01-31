@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong) id<RMAlertDataHelper> dataHelper;
 @property (nonatomic, weak) id<RMRootWireframe> rootWireframe;
+
 @property (strong, nonatomic) IBOutlet UIImageView *headerImageView;
 @property (strong, nonatomic) IBOutlet UILabel *headerTitleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *headerDescriptionLabel;

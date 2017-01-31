@@ -25,14 +25,23 @@ typedef NS_ENUM(NSUInteger, RMAlertCyberAgentMatch) {
     RMAlertCyberAgentMatchRetailCard,
 };
 
+/**
+ * Data model for CyberAgent's event data.
+ *
+ * It contains email field, and I assume that any other data for
+ * the rest match data will be here as properties.
+ * So, i.e. in case of RMAlertCyberAgentMatchEmailAddress email property will be not empty,
+ * and in case of RMAlertCyberAgentMatchCellPhone cellPhone will be not empty.
+ */
 @interface RMAlertCyberAgentEventData : RMAlertEventData
 
 @property (nonatomic, strong, readonly) NSDate *sourceDate;
 @property (nonatomic, strong, readonly) NSDate *creationDate;
-@property (nonatomic, strong, readonly) NSString *site;
-@property (nonatomic, strong, readonly) NSString *source;
+@property (nonatomic, copy, readonly) NSString *site;
+@property (nonatomic, copy, readonly) NSString *source;
 @property (nonatomic, assign, readonly) RMAlertCyberAgentMatch match;
-@property (nonatomic, strong, readonly) NSString *email;
+@property (nonatomic, copy, readonly) NSString *email;
+
 
 - (instancetype)initWithDate:(NSDate *)date
                   sourceDate:(NSDate *)sourceDate

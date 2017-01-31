@@ -14,7 +14,16 @@
 
 @protocol RMServicesFactory <NSObject>
 
+/**
+ * Push notifications service
+ */
 @property (nonatomic, strong, readonly) id<RMPushService> pushService;
+
+/**
+ * Parser service
+ *
+ * Responsible to parse data into models
+ */
 @property (nonatomic, strong, readonly) id<RMParserService> parserService;
 
 @end

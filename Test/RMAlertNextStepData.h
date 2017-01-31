@@ -10,8 +10,8 @@
 
 @interface RMAlertNextStepData : NSObject
 
-@property (nonatomic, strong, readonly) NSString *iconName;
-@property (nonatomic, strong, readonly) NSString *title;
+@property (nonatomic, copy, readonly) NSString *iconName;
+@property (nonatomic, copy, readonly) NSString *title;
 
 - (instancetype)initWithTitle:(NSString *)title
                      iconName:(NSString *)iconName;

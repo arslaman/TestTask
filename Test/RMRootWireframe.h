@@ -23,6 +23,14 @@
 @interface RMRootWireframe : NSObject <RMRootWireframe>
 
 - (instancetype)initWithServicesFactory:(id<RMServicesFactory>)servicesFactory;
+
+/**
+ * Configures UI to present app.
+ *
+ * Takes control over window and presents default view controller
+ *
+ * @param window application's window
+ */
 - (void)installToWindow:(UIWindow *)window;
 
 @end
